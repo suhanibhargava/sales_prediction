@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Big Mart | Predict the World With Us</title>
+
+
+	<!-- bootstrap cdn link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<style>
+html{
+    height: 100%;
+    margin: 0 auto;
+    background-color: #3a7cbd;
+    background-image: url("/static/images/a.jpg");
+     height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    overflow-y: scroll;
+}
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.proj-brief{
+    background-color: #3fb0ac;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px ;
+}
+.proj-brief p{
+    font-size: 22px;
+    color: #ffffff;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding: 70px 0px 0px 0px;
+    text-align: justify;
+}
+.proj-heading{
+    color: #ffffff;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+.form-wrapper{
+    background-color: #ffffff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 70px;
+}
+.form-heading{
+    color: #3fb0ac;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+.form-input{
+    margin-left: 70px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #3fb0ac;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Montserrat"
+    width: 100%;
+}
+.btn-submit{
+    margin-top: 30px;
+    background-color: #3fb0ac;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-left: 70px;
+    padding: 10px;
+}
+.form-heading2
+{
+  padding-left:10px;
+}
+</style>
+
+
+<body>
+
+	<!-- best viewed when you're online, so keep yourself online garib -->
+
+	<div class="row wrapper">
+		<div class="col-md-6 proj-brief">
+			<!-- <h1 class="proj-heading">big mart</h1> -->
+			<center><img src="/static/images/download.png"></center>
+			<p>Enter Item ID and Outlet ID to predict sales for 2014 </p>
+		</div>
+		<div class="col-md-6 form-wrapper">
+			<h1 class="form-heading">Sales Prediction</h1
+      <h3 class="form-heading2"><b>{{ status }}</b></h3>
+		</div>
+	</div>
+
+</body>
+</html>

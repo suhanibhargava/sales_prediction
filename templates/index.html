@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block code %}
+    <h3>Enter item ID.</h3>
+    <form action="{{ url_for('output') }}" method="post">
+      <input type="text" name="item_id" placeholder="Enter item ID"><br><br>
+      <h3>Enter outlet ID.</h3>
+      <input type="text" name="outlet_id" placeholder="Enter outlet ID"><br><br>
+      <input type="submit" name="sub" value="Send">
+    </form>
+
+  {% endblock %}
